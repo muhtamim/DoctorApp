@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/doctor_appointment"
+                android:background="@drawable/doctor_appoinmentt"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <Button
+                android:id="@+id/reminder"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/m_reminder"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/secand_raw"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/articles"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <Button
+                android:layout_marginTop="20dp"
+                android:background="@drawable/health_record"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:background="@color/about_facebook_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
