@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.ChasingDots;
+import com.github.ybq.android.spinkit.style.CubeGrid;
 import com.github.ybq.android.spinkit.style.FoldingCube;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -20,8 +22,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         progress = (ProgressBar) findViewById(R.id.progress_bar_id);
-        Sprite foldingCube = new FoldingCube();
-        progress.setIndeterminateDrawable(foldingCube);
+        Sprite CubeGrid = new CubeGrid();
+        progress.setIndeterminateDrawable(CubeGrid);
 
         Thread thread = new Thread() {
             @Override
