@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
+<RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -38,6 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <Button
+                android:id="@+id/articles"
                 android:background="@drawable/articles"
                 android:layout_width="100dp"
                 android:layout_height="100dp" />
@@ -72,3 +81,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>
+</ScrollView>

@@ -70,6 +70,13 @@
 
         <activity android:name="com.example.muhtamimnahid.doctorapp.Activity_Main_Appointment"
             android:screenOrientation="portrait" />
+        <activity android:name=".ArticalFitnes" />
+        <activity android:name=".ArticalBaby" />
+        <activity android:name=".ArticalWomens" />
+        <activity android:name=".ArticalHealth" />
+        <activity android:name=".ArticalFood" />
+        <activity android:name=".Articale_Home"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 
     </application>
