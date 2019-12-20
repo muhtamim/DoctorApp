@@ -1,7 +1,272 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">CareConnect</string>
 
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="copy_right" translatable="false">Copyrights © %1$d</string>
-</resources>
+    <string name="intro">Hi i am your smart drug directory"\n"I can help you finding your urgent drug information</string>
+    <string name="okayButton">Okay</string>
+    <string name="meet">Have we met before?</string>
+    <string name="yes">Yes</string>
+    <string name="No">No,not yet</string>
+    <string name="Greetings">Nice to meet you</string>
+    <string name="tap">You can always change you answer latter if you want to </string>
+    <string name="getStarted">Okay,lets get started with your email address</string>
+    <string name="emailHint">Type your email address</string>
+    <string name="done">Done</string>
+    <string name="choosePass">Please choose a strong password to keep your data safe</string>
+    <string name="passHint">Type a password</string>
+    <string name="signUpFinishing">Your sign up process has been almost done</string>
+    <string name="showTermsAndCond">Show terms and Conditions</string>
+    <string name="accept">I have read the terms and conditions"\n"And I accept it</string>
+    <string name="signUp">Sign up now</string>
+    <string-array name="query">
+        <item>Furniture</item>
+        <item>Real estate</item>
+        <item>Services</item>
+        <item>Pet care</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+        // App
+
+        <string name="app_permissions_title">Used permissions</string>
+        <string name="app_permissions">
+
+        &lt;i>Access Storage Permission:&lt;/i>&lt;br>
+        Used to read files (images) from sd-card and save Health Records-files.&lt;br>&lt;br>
+
+        &lt;i>Grant permission later:&lt;/i>&lt;br>
+        If you don\'t permit this now, you can do it later. Please open then \"Settings -> App info\" and choose \"Permissions\".</string>
+        <string name="app_landscape">Landscape</string>
+        <string name="app_share_file">Choose file with:</string>
+
+
+        // App titles
+
+        <string name="create_image">Image to Health Records</string>
+        <string name="create_text">Text to Health Records</string>
+        <string name="add_image">+ image</string>
+        <string name="add_text">+ text | …</string>
+        <string name="app_title_edit">Edit image</string>
+        <string name="app_title_crop">Crop image</string>
+        <string name="app_portrait">Portrait</string>
+
+
+        // Snackbar // Toasts
+
+        <string name="toast_yes">OK</string>
+        <string name="toast_cancel">Cancel</string>
+        <string name="toast_successfully">Health Records successfully created.</string>
+        <string name="toast_wait">Images successfully created. Open folder?</string>
+        <string name="toast_successfully_not">An error occurred.</string>
+        <string name="toast_open">Open?</string>
+        <string name="toast_install_app">Please install an app to perform action.</string>
+        <string name="toast_noImage">Please choose an image.</string>
+        <string name="toast_noPDF">Choose or create a Health Records file.</string>
+        <string name="toast_noText">Please enter text.</string>
+        <string name="toast_savedImage">Please wait. Saving image.</string>
+        <string name="toast_notAgain">Do not show again</string>
+        <string name="toast_extension">No supported file extension</string>
+        <string name="toast_edited">Image was edited. Saving?</string>
+        <string name="toast_no">No</string>
+        <string name="toast_remove_confirmation">Entry will be removed. OK?</string>
+        <string name="toast_directory">Can\'t open Directory.</string>
+        <string name="toast_files">No files in directory.</string>
+        <string name="toast_picFile">Please choose image file.</string>
+        <string name="toast_pdfFile">Please choose Health Records file.</string>
+        <string name="toast_permission">Grant permission. Open settings?</string>
+
+
+        // Main menu
+
+        <string name="action_share">Share Health Records</string>
+        <string name="action_open">Open Health Records</string>
+        <string name="action_settings">Settings</string>
+        <string name="action_save">Save</string>
+        <string name="action_share_with">Share Health Records with:</string>
+        <string name="action_share_Text">In the attachment you can find the Health Records file:</string>
+        <string name="action_help">Help</string>
+
+
+        // Fragments
+
+        <string name="app_title">Please enter title:</string>
+        <string name="app_title_date">Date</string>
+        <string name="addImage">Add Image</string>
+        <string name="dialog_createImage">Create Image</string>
+        <string name="dialog_addImage">Add Image</string>
+        <string name="dialog_addText">Add Text</string>
+        <string name="dialog_createText">Create Text</string>
+        <string name="app_hint" tools:ignore="TypographyEllipsis">Whatever you want ...</string>
+
+
+        // Text fragment
+
+        <string name="add_text_delete">Delete pages</string>
+        <string name="add_text_delete_hint">Which pages do you want to keep?</string>
+        <string name="add_text_hint_enterText">Write or paste text</string>
+        <string name="add_text_meta_doc">Edit existing metadata</string>
+        <string name="add_text_meta_default">Create new metadata</string>
+
+
+        // Editor
+
+        <string name="filter_1">Contrast</string>
+        <string name="filter_2">Hue</string>
+        <string name="filter_3">Brightness</string>
+        <string name="filter_4">Sharpness</string>
+        <string name="filter_5">Saturation</string>
+
+        <string name="filter_6">Exposure</string>
+        <string name="filter_7">Highlight Shadow</string>
+        <string name="filter_8">White Balance</string>
+        <string name="filter_9">Color Balance</string>
+        <string name="filter_10">Levels Min (Mid Adjust)</string>
+
+
+        // Dialogs
+
+        <string name="dialog_encryption_hint_ownerPW">Owner password</string>
+        <string name="dialog_encryption_hint_userPW">User password</string>
+        <string name="choose_title">Edit filename</string>
+        <string name="choose_filter">Choose filter</string>
+
+
+        // Settings
+
+        <string name="settings_prefApp">About the app</string>
+        <string name="settings_prefDir">App directory</string>
+        <string name="settings_prefEnc">Encryption</string>
+        <string name="settings_prefMeta">Metadata</string>
+
+        <string name="pref_imageQuality">Image quality</string>
+        <string name="pref_imageQuality_summary">Set the image quality. Higher quality results in (much) bigger PDF sizes.</string>
+
+        <string name="pref_backup">Backup</string>
+        <string name="pref_backup_summary">Do you want to backup pdf files before manipulating, e.g. deleting or adding pages?</string>
+
+        <string name="pref_folder">Custom directory</string>
+        <string name="pref_folder_hint">Format: \"/Download/PDF/\"</string>
+        <string name="pref_folder_summary">Let empty to use the default directory (\"/Android/data/de.baumann.pdf/\"). Enter the path
+        to your desired folder on your sdcard. The path must begin and end with \"/\" like \"/Download/PDF/\".
+        If the desired directory does not exist, it will be generated automatically.</string>
+
+        <string name="pref_metaAuthor">Author</string>
+
+        <string name="pref_metaTitle">Title</string>
+        <string name="pref_metaCreator">Creator</string>
+        <string name="pref_metaKeywords">Keywords</string>
+        <string name="pref_metaSubject">Subject</string>
+
+        <string name="action_openSettings">App info</string>
+        <string name="action_openSettings_summary">Open via the system settings the app info of the app. There you can,
+        depending on your Android version, manage several things (Storage, network traffic, permissions, …).</string>
+
+        <string-array name="listArrayImage">
+            <item>High (100%)</item>
+            <item>Normal (80%)</item>
+            <item>Low (60%)</item>
+        </string-array>
+
+        <string-array name="listValuesImage">
+            <item>100</item>
+            <item>80</item>
+            <item>60</item>
+        </string-array>
+
+
+        //Image cropper
+
+        <string name="app_title_2">Saving picture …</string>
+        <string name="crop_image_menu_rotate_left">Rotate left</string>
+        <string name="crop_image_menu_rotate_right">Rotate right</string>
+
+
+        //File chooser
+
+        <string name="dialog_cancel">Cancel</string>
+
+        <string name="choose_menu_2">Share</string>
+        <string name="choose_menu_3">Rename</string>
+        <string name="choose_menu_4">Delete</string>
+
+        <string name="choose_hint">New Report name</string>
+
+        <string name="action_sort">Sort entries</string>
+        <string name="action_sort_title">Sort by title</string>
+        <string name="action_sort_create">Sort by date</string>
+        <string name="action_sort_ext">Sort by extension</string>
+
+        <string name="action_filter">Search in entries</string>
+        <string name="action_filter_title">Search in titles</string>
+        <string name="action_filter_create">Search in creation dates</string>
+
+        <string name="filter_today">Today</string>
+        <string name="filter_yesterday">Yesterday</string>
+        <string name="filter_before">Day before yesterday</string>
+        <string name="filter_month">This month</string>
+        <string name="filter_own">Own search</string>
+        <string name="filter_clear">Cancel search</string>
+
+        <string name="sort_title">title</string>
+        <string name="sort_date">date</string>
+        <string name="sort_extension">extension</string>
+
+        <string name="choose_titleMain">Health Records</string>
+        <string name="title_hint">Title</string>
+
+
+        // About
+
+        <string name="about_settings">… and other things</string>
+        <string name="about_settings_text">Changelog, help,used libraries and more.</string>
+
+        <string name="about_title_main">About CareConnect </string>
+        <string name="about_title_dev">Developer</string>
+        <string name="about_title_libs">Used open source libraries</string>
+        <string name="about_title_ext">Extension</string>
+
+
+
+        <string name="about_ext">Report Viewer</string>
+
+        <string name="about_intro">Intro</string>
+        <string name="about_intro_summary">Show the intro screen one more time.</string>
+
+
+        <string name="about_license_2">Used to crop and rotate images.</string>
+        <string name="about_license_3">Used to build the intro screen.</string>
+        <string name="about_license_4">Used to enhance and manipulate pictures.</string>
+        <string name="about_license_5">Used to create and manipulate PDF files.</string>
+        <string name="about_license_6">Used to convert PDF files to images.</string>
+        <string name="about_license_7">Used to create the \"About screen\".</string>
+        <string name="about_license_8">The source of nearly all icons.</string>
+        <string name="about_license_9">A powerful image downloading and caching library for Android.</string>
+        <string name="about_license_1">Android library to easily pick an image from gallery or camera app.</string>
+
+
+        // Intro
+
+        <string name="intro_skip">Skip</string>
+        <string name="intro_finish">Let\'s start.</string>
+
+        <string name="intro1_title">Track Health Record </string>
+        <string name="intro1_text">Thank you for choosing \"CareConnect\". It\'s fully open free and still in development.
+        You can reach a short help dialog on every tab by pressing \"menu -> help\" …</string>
+
+        <string name="intro2_title">The tabs</string>
+        <string name="intro2_text">You have a build in file explorer. You can either create new Health Record files from an image or from text or
+        manipulate existing PDFs.</string>
+
+        <string name="intro3_title">Nice to know:</string>
+        <string name="intro3_text">At the bottom you can see the name of the actual Report and the format. By pressing this area
+        you can switch between portrait and landscape format for your PDF page.</string>
+
+    </resources>
+
+
