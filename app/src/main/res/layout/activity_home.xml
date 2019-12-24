@@ -4,82 +4,85 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
-    android:scrollbars = "vertical"
-    android:scrollbarStyle="insideInset">
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical">
 
-<RelativeLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Home">
-
-    <LinearLayout
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:context=".Home">
 
         <LinearLayout
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/doctor_appointment"
-                android:background="@drawable/doctor_appoinmentt"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
-            <Button
-                android:id="@+id/reminder"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/m_reminder"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/doctor_appointment"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/doctor_appoinmentt" />
+
+                <Button
+                    android:id="@+id/drugdirectory"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/m_reminder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secand_raw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/articles"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/articles" />
+
+                <Button
+                    android:id="@+id/health_record"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/health_record" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
-        <LinearLayout
-            android:id="@+id/secand_raw"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/articles"
-                android:background="@drawable/articles"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
-            <Button
-                android:id="@+id/health_record"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/health_record"
-                android:layout_width="100dp"
-                android:layout_height="100dp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/logo" />
-
-        </LinearLayout>
 
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_chart" />
 
-
-
-    <ImageView
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/ic_chart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:background="@color/about_facebook_color"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/about_facebook_color"
+            android:textColor="#fff" />
+    </RelativeLayout>
 </ScrollView>

@@ -4,44 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="ContentDescription" >
+    tools:ignore="ContentDescription">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBG"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".Activity_Main">
 
         <RelativeLayout
             android:id="@+id/filter_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp" >
+            android:layout_margin="12dp">
 
             <EditText
                 android:id="@+id/myFilter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
                 android:layout_toStartOf="@+id/ib_hideKeyboard"
-                android:inputType="text"
-                android:hint="@string/title_hint" />
+                android:hint="@string/title_hint"
+                android:inputType="text" />
 
             <ImageButton
+                android:id="@+id/ib_hideKeyboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                app:srcCompat="@drawable/close_red"
+                android:layout_centerVertical="true"
                 android:background="?android:selectableItemBackground"
-                android:id="@+id/ib_hideKeyboard" />
+                app:srcCompat="@drawable/close_red" />
 
         </RelativeLayout>
 
-        <ListView android:id="@+id/listNotes"
+        <ListView
+            android:id="@+id/listNotes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"

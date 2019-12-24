@@ -1,8 +1,6 @@
 package com.example.muhtamimnahid.doctorapp;
 
-/**
- * Created by Abdullah Al Rifat on 08-Apr-18.
- */
+
 
 public class baby_model
 {

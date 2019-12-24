@@ -7,8 +7,9 @@
     android:orientation="vertical"
     tools:context=".Patient_BookAppointmentActivity">
 
-    <include layout="@layout/app_bar_layout"
-        android:id="@+id/patient_bookAppointment"/>
+    <include
+        android:id="@+id/patient_bookAppointment"
+        layout="@layout/app_bar_layout" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,25 +19,25 @@
         <TextView
             android:id="@+id/bookAppointment_selectedDate"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Selected Date"
-            android:textStyle="bold|italic"
             android:textColor="#ffffff"
             android:textSize="20dp"
-            android:gravity="center" />
+            android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/bookAppointment_selectDate"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:padding="5dp"
             android:text="Select Date"
             android:textColor="#ffffff"
-            android:textStyle="bold|italic"
             android:textSize="20dp"
-            android:gravity="center"/>
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
     <LinearLayout
@@ -56,22 +57,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time1"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time1">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -83,19 +83,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time2"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time2">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -108,18 +108,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time3"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time3">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -134,25 +133,25 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time4"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time4">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -164,19 +163,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time5"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time5">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -189,18 +188,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time6"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time6">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -215,25 +213,25 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time7"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time7">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -245,19 +243,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time8"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time8">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -270,18 +268,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time9"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time9">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -295,25 +292,25 @@
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time10"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time10">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -325,19 +322,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time11"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time11">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -350,18 +347,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time12"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time12">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -375,25 +371,25 @@
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time13"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time13">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -405,19 +401,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time14"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time14">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -430,18 +426,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time15"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time15">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -467,22 +462,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time16"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time16">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -494,19 +488,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time17"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time17">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -519,18 +513,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time18"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time18">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -545,25 +538,25 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time19"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time19">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -575,19 +568,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time20"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time20">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -600,18 +593,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time21"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time21">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -626,25 +618,25 @@
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time22"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time22">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -656,19 +648,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time23"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time23">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -681,18 +673,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time24"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time24">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -706,25 +697,25 @@
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time25"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time25">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -736,19 +727,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time26"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time26">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -761,18 +752,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time27"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time27">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -786,25 +776,25 @@
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time28"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time28">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -816,19 +806,19 @@
                         android:textStyle="bold" />
 
                 </android.support.v7.widget.CardView>
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time29"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time29">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -841,18 +831,17 @@
 
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/time30"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:onClick="onClick"
                     card_view:cardBackgroundColor="@color/skyBlue"
                     card_view:cardCornerRadius="4dp"
-                    card_view:cardElevation="10dp"
-                    android:onClick="onClick"
 
-                    android:id="@+id/time30">
+                    card_view:cardElevation="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -870,12 +859,12 @@
 
         <Button
             android:id="@+id/confirm_appointment"
-            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
             android:text="Confirm"
-            android:textColor="@color/white"
-            android:background="@drawable/button_background"/>
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </LinearLayout>

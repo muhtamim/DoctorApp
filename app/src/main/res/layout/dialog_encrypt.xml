@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingEnd="20dp"
     android:paddingStart="20dp"
     android:paddingTop="15dp">
@@ -11,28 +11,28 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true" >
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/pass_ownerPW"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="@string/dialog_encryption_hint_ownerPW"/>
+            android:hint="@string/dialog_encryption_hint_ownerPW"
+            android:inputType="textPassword" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true" >
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/pass_userPW"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="@string/dialog_encryption_hint_userPW"/>
+            android:hint="@string/dialog_encryption_hint_userPW"
+            android:inputType="textPassword" />
 
     </android.support.design.widget.TextInputLayout>
 

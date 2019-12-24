@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="de.baumann.quitsmoking.MainActivity"
-        android:foregroundGravity="center"
+        android:layout_alignParentBottom="false"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="false"
-        android:layout_alignParentBottom="false"
         android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="de.baumann.quitsmoking.MainActivity"
         tools:ignore="UselessParent">
 
         <LinearLayout
@@ -26,34 +26,34 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                app:passwordToggleEnabled="false" >
+                android:layout_marginTop="16dp"
+                app:passwordToggleEnabled="false">
 
                 <EditText
                     android:id="@+id/metaTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/pref_metaTitle"/>
+                    android:hint="@string/pref_metaTitle"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                app:passwordToggleEnabled="false" >
+                android:layout_marginTop="16dp"
+                app:passwordToggleEnabled="false">
 
                 <EditText
                     android:id="@+id/metaAuthor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/pref_metaAuthor"/>
+                    android:hint="@string/pref_metaAuthor"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -62,14 +62,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                app:passwordToggleEnabled="false" >
+                app:passwordToggleEnabled="false">
 
                 <EditText
                     android:id="@+id/metaCreator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/pref_metaCreator"/>
+                    android:hint="@string/pref_metaCreator"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -78,14 +78,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                app:passwordToggleEnabled="false" >
+                app:passwordToggleEnabled="false">
 
                 <EditText
                     android:id="@+id/metaSubject"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/pref_metaSubject"/>
+                    android:hint="@string/pref_metaSubject"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -94,14 +94,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
-                app:passwordToggleEnabled="false" >
+                app:passwordToggleEnabled="false">
 
                 <EditText
                     android:id="@+id/metaKeywords"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="@string/pref_metaKeywords"/>
+                    android:hint="@string/pref_metaKeywords"
+                    android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
 

@@ -1,6 +1,9 @@
 package com.example.muhtamimnahid.doctorapp;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,14 +12,14 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
-    private Button doctor_app,reminder,Artical,health_recordd;
+    private Button doctor_app, drug_directory, Artical, health_recordd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         doctor_app = (Button) findViewById(R.id.doctor_appointment);
-        reminder = (Button)findViewById(R.id.reminder);
+        drug_directory = (Button) findViewById(R.id.drugdirectory);
         Artical = (Button) findViewById(R.id.articles);
         health_recordd = (Button) findViewById(R.id.health_record);
 
@@ -26,7 +29,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Activity_Main_Appointment.class);
+                Intent i = new Intent(getApplicationContext(), Activity_Main_Appointment.class);
                 startActivity(i);
             }
         });
@@ -35,17 +38,37 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Articale_Home.class);
+                Intent i = new Intent(getApplicationContext(), Articale_Home.class);
                 startActivity(i);
             }
         });
-        reminder.setOnClickListener(new View.OnClickListener() {
+        drug_directory.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Articale_Home.class);
-                startActivity(i);
+//                Intent i = new Intent(getApplicationContext(),Articale_Home.class);
+//                startActivity(i);
+                AlertDialog.Builder myAlertDialog = new AlertDialog.Builder(Home.this);
+                myAlertDialog.setTitle("--- Drug Directory ---");
+                myAlertDialog.setMessage("Do you want to download Drug Directory?");
+                myAlertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("https://drive.google.com/open?id=1cD7s9IVeMiMB9ZViEw0TusXxvnY-4MAQ"));
+                        startActivity(intent);
+                    }
+                });
+
+                myAlertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+
+                        // do something when the Cancel button is clicked
+                    }
+                });
+
+                myAlertDialog.show();
+
             }
         });
 
@@ -54,7 +77,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(getApplicationContext(),Activity_Main.class);
+                Intent i = new Intent(getApplicationContext(), Activity_Main.class);
                 startActivity(i);
             }
         });

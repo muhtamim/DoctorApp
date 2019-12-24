@@ -7,8 +7,9 @@
     android:orientation="vertical"
     tools:context=".Patient_ShowBookedAppointmentActivity">
 
-    <include layout="@layout/app_bar_layout"
-        android:id="@+id/show_bookedAppointment"/>
+    <include
+        android:id="@+id/show_bookedAppointment"
+        layout="@layout/app_bar_layout" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/show_Appointment_recyclerView"
