@@ -37,12 +37,6 @@
     <PreferenceCategory
         android:title="@string/settings_prefApp">
 
-        <Preference
-            android:title="@string/about_settings"
-            android:icon="@drawable/information_outline"
-            android:summary="@string/about_settings_text"
-            android:key="license" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
-    private Button doctor_app, drug_directory, Artical, health_recordd;
+    private Button doctor_app, drug_directory, Artical, health_recordd,self_test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Home extends AppCompatActivity {
         drug_directory = (Button) findViewById(R.id.drugdirectory);
         Artical = (Button) findViewById(R.id.articles);
         health_recordd = (Button) findViewById(R.id.health_record);
+        self_test = (Button) findViewById(R.id.selftest);
 
 
         doctor_app.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +79,16 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent i = new Intent(getApplicationContext(), Activity_Main.class);
+                startActivity(i);
+            }
+        });
+
+        self_test.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(), SelfTest.class);
                 startActivity(i);
             }
         });

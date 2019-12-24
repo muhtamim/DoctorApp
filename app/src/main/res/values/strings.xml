@@ -32,241 +32,326 @@
     <string name="title_notifications">Notifications</string>
 
 
-        // App
+    // App
 
-        <string name="app_permissions_title">Used permissions</string>
-        <string name="app_permissions">
+    <string name="app_permissions_title">Used permissions</string>
+    <string name="app_permissions">
 
         &lt;i>Access Storage Permission:&lt;/i>&lt;br>
         Used to read files (images) from sd-card and save Health Records-files.&lt;br>&lt;br>
 
         &lt;i>Grant permission later:&lt;/i>&lt;br>
         If you don\'t permit this now, you can do it later. Please open then \"Settings -> App info\" and choose \"Permissions\".</string>
-        <string name="app_landscape">Landscape</string>
-        <string name="app_share_file">Choose file with:</string>
+    <string name="app_landscape">Landscape</string>
+    <string name="app_share_file">Choose file with:</string>
 
 
-        // App titles
+    // App titles
 
-        <string name="create_image">Image to Health Records</string>
-        <string name="create_text">Text to Health Records</string>
-        <string name="add_image">+ image</string>
-        <string name="add_text">+ text | …</string>
-        <string name="app_title_edit">Edit image</string>
-        <string name="app_title_crop">Crop image</string>
-        <string name="app_portrait">Portrait</string>
-
-
-        // Snackbar // Toasts
-
-        <string name="toast_yes">OK</string>
-        <string name="toast_cancel">Cancel</string>
-        <string name="toast_successfully">Health Records successfully created.</string>
-        <string name="toast_wait">Images successfully created. Open folder?</string>
-        <string name="toast_successfully_not">An error occurred.</string>
-        <string name="toast_open">Open?</string>
-        <string name="toast_install_app">Please install an app to perform action.</string>
-        <string name="toast_noImage">Please choose an image.</string>
-        <string name="toast_noPDF">Choose or create a Health Records file.</string>
-        <string name="toast_noText">Please enter text.</string>
-        <string name="toast_savedImage">Please wait. Saving image.</string>
-        <string name="toast_notAgain">Do not show again</string>
-        <string name="toast_extension">No supported file extension</string>
-        <string name="toast_edited">Image was edited. Saving?</string>
-        <string name="toast_no">No</string>
-        <string name="toast_remove_confirmation">Entry will be removed. OK?</string>
-        <string name="toast_directory">Can\'t open Directory.</string>
-        <string name="toast_files">No files in directory.</string>
-        <string name="toast_picFile">Please choose image file.</string>
-        <string name="toast_pdfFile">Please choose Health Records file.</string>
-        <string name="toast_permission">Grant permission. Open settings?</string>
+    <string name="create_image">Image to Health Records</string>
+    <string name="create_text">Text to Health Records</string>
+    <string name="add_image">+ image</string>
+    <string name="add_text">+ text | …</string>
+    <string name="app_title_edit">Edit image</string>
+    <string name="app_title_crop">Crop image</string>
+    <string name="app_portrait">Portrait</string>
 
 
-        // Main menu
+    // Snackbar // Toasts
 
-        <string name="action_share">Share Health Records</string>
-        <string name="action_open">Open Health Records</string>
-        <string name="action_settings">Settings</string>
-        <string name="action_save">Save</string>
-        <string name="action_share_with">Share Health Records with:</string>
-        <string name="action_share_Text">In the attachment you can find the Health Records file:</string>
-        <string name="action_help">Help</string>
-
-
-        // Fragments
-
-        <string name="app_title">Please enter title:</string>
-        <string name="app_title_date">Date</string>
-        <string name="addImage">Add Image</string>
-        <string name="dialog_createImage">Create Image</string>
-        <string name="dialog_addImage">Add Image</string>
-        <string name="dialog_addText">Add Text</string>
-        <string name="dialog_createText">Create Text</string>
-        <string name="app_hint" tools:ignore="TypographyEllipsis">Whatever you want ...</string>
-
-
-        // Text fragment
-
-        <string name="add_text_delete">Delete pages</string>
-        <string name="add_text_delete_hint">Which pages do you want to keep?</string>
-        <string name="add_text_hint_enterText">Write or paste text</string>
-        <string name="add_text_meta_doc">Edit existing metadata</string>
-        <string name="add_text_meta_default">Create new metadata</string>
+    <string name="toast_yes">OK</string>
+    <string name="toast_cancel">Cancel</string>
+    <string name="toast_successfully">Health Records successfully created.</string>
+    <string name="toast_wait">Images successfully created. Open folder?</string>
+    <string name="toast_successfully_not">An error occurred.</string>
+    <string name="toast_open">Open?</string>
+    <string name="toast_install_app">Please install an app to perform action.</string>
+    <string name="toast_noImage">Please choose an image.</string>
+    <string name="toast_noPDF">Choose or create a Health Records file.</string>
+    <string name="toast_noText">Please enter text.</string>
+    <string name="toast_savedImage">Please wait. Saving image.</string>
+    <string name="toast_notAgain">Do not show again</string>
+    <string name="toast_extension">No supported file extension</string>
+    <string name="toast_edited">Image was edited. Saving?</string>
+    <string name="toast_no">No</string>
+    <string name="toast_remove_confirmation">Entry will be removed. OK?</string>
+    <string name="toast_directory">Can\'t open Directory.</string>
+    <string name="toast_files">No files in directory.</string>
+    <string name="toast_picFile">Please choose image file.</string>
+    <string name="toast_pdfFile">Please choose Health Records file.</string>
+    <string name="toast_permission">Grant permission. Open settings?</string>
 
 
-        // Editor
+    // Main menu
 
-        <string name="filter_1">Contrast</string>
-        <string name="filter_2">Hue</string>
-        <string name="filter_3">Brightness</string>
-        <string name="filter_4">Sharpness</string>
-        <string name="filter_5">Saturation</string>
-
-        <string name="filter_6">Exposure</string>
-        <string name="filter_7">Highlight Shadow</string>
-        <string name="filter_8">White Balance</string>
-        <string name="filter_9">Color Balance</string>
-        <string name="filter_10">Levels Min (Mid Adjust)</string>
+    <string name="action_share">Share Health Records</string>
+    <string name="action_open">Open Health Records</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_share_with">Share Health Records with:</string>
+    <string name="action_share_Text">In the attachment you can find the Health Records file:</string>
+    <string name="action_help">Help</string>
 
 
-        // Dialogs
+    // Fragments
 
-        <string name="dialog_encryption_hint_ownerPW">Owner password</string>
-        <string name="dialog_encryption_hint_userPW">User password</string>
-        <string name="choose_title">Edit filename</string>
-        <string name="choose_filter">Choose filter</string>
+    <string name="app_title">Please enter title:</string>
+    <string name="app_title_date">Date</string>
+    <string name="addImage">Add Image</string>
+    <string name="dialog_createImage">Create Image</string>
+    <string name="dialog_addImage">Add Image</string>
+    <string name="dialog_addText">Add Text</string>
+    <string name="dialog_createText">Create Text</string>
+    <string name="app_hint" tools:ignore="TypographyEllipsis">Whatever you want ...</string>
 
 
-        // Settings
+    // Text fragment
 
-        <string name="settings_prefApp">About the app</string>
-        <string name="settings_prefDir">App directory</string>
-        <string name="settings_prefEnc">Encryption</string>
-        <string name="settings_prefMeta">Metadata</string>
+    <string name="add_text_delete">Delete pages</string>
+    <string name="add_text_delete_hint">Which pages do you want to keep?</string>
+    <string name="add_text_hint_enterText">Write or paste text</string>
+    <string name="add_text_meta_doc">Edit existing metadata</string>
+    <string name="add_text_meta_default">Create new metadata</string>
 
-        <string name="pref_imageQuality">Image quality</string>
-        <string name="pref_imageQuality_summary">Set the image quality. Higher quality results in (much) bigger PDF sizes.</string>
 
-        <string name="pref_backup">Backup</string>
-        <string name="pref_backup_summary">Do you want to backup pdf files before manipulating, e.g. deleting or adding pages?</string>
+    // Editor
 
-        <string name="pref_folder">Custom directory</string>
-        <string name="pref_folder_hint">Format: \"/Download/PDF/\"</string>
-        <string name="pref_folder_summary">Let empty to use the default directory (\"/Android/data/de.baumann.pdf/\"). Enter the path
+    <string name="filter_1">Contrast</string>
+    <string name="filter_2">Hue</string>
+    <string name="filter_3">Brightness</string>
+    <string name="filter_4">Sharpness</string>
+    <string name="filter_5">Saturation</string>
+
+    <string name="filter_6">Exposure</string>
+    <string name="filter_7">Highlight Shadow</string>
+    <string name="filter_8">White Balance</string>
+    <string name="filter_9">Color Balance</string>
+    <string name="filter_10">Levels Min (Mid Adjust)</string>
+
+
+    // Dialogs
+
+    <string name="dialog_encryption_hint_ownerPW">Owner password</string>
+    <string name="dialog_encryption_hint_userPW">User password</string>
+    <string name="choose_title">Edit filename</string>
+    <string name="choose_filter">Choose filter</string>
+
+
+    // Settings
+
+    <string name="settings_prefApp">About the app</string>
+    <string name="settings_prefDir">App directory</string>
+    <string name="settings_prefEnc">Encryption</string>
+    <string name="settings_prefMeta">Metadata</string>
+
+    <string name="pref_imageQuality">Image quality</string>
+    <string name="pref_imageQuality_summary">Set the image quality. Higher quality results in (much) bigger PDF sizes.</string>
+
+    <string name="pref_backup">Backup</string>
+    <string name="pref_backup_summary">Do you want to backup pdf files before manipulating, e.g. deleting or adding pages?</string>
+
+    <string name="pref_folder">Custom directory</string>
+    <string name="pref_folder_hint">Format: \"/Download/PDF/\"</string>
+    <string name="pref_folder_summary">Let empty to use the default directory (\"/Android/data/de.baumann.pdf/\"). Enter the path
         to your desired folder on your sdcard. The path must begin and end with \"/\" like \"/Download/PDF/\".
         If the desired directory does not exist, it will be generated automatically.</string>
 
-        <string name="pref_metaAuthor">Author</string>
+    <string name="pref_metaAuthor">Author</string>
 
-        <string name="pref_metaTitle">Title</string>
-        <string name="pref_metaCreator">Creator</string>
-        <string name="pref_metaKeywords">Keywords</string>
-        <string name="pref_metaSubject">Subject</string>
+    <string name="pref_metaTitle">Title</string>
+    <string name="pref_metaCreator">Creator</string>
+    <string name="pref_metaKeywords">Keywords</string>
+    <string name="pref_metaSubject">Subject</string>
 
-        <string name="action_openSettings">App info</string>
-        <string name="action_openSettings_summary">Open via the system settings the app info of the app. There you can,
+    <string name="action_openSettings">App info</string>
+    <string name="action_openSettings_summary">Open via the system settings the app info of the app. There you can,
         depending on your Android version, manage several things (Storage, network traffic, permissions, …).</string>
 
-        <string-array name="listArrayImage">
-            <item>High (100%)</item>
-            <item>Normal (80%)</item>
-            <item>Low (60%)</item>
-        </string-array>
+    <string-array name="listArrayImage">
+        <item>High (100%)</item>
+        <item>Normal (80%)</item>
+        <item>Low (60%)</item>
+    </string-array>
 
-        <string-array name="listValuesImage">
-            <item>100</item>
-            <item>80</item>
-            <item>60</item>
-        </string-array>
-
-
-        //Image cropper
-
-        <string name="app_title_2">Saving picture …</string>
-        <string name="crop_image_menu_rotate_left">Rotate left</string>
-        <string name="crop_image_menu_rotate_right">Rotate right</string>
+    <string-array name="listValuesImage">
+        <item>100</item>
+        <item>80</item>
+        <item>60</item>
+    </string-array>
 
 
-        //File chooser
+    //Image cropper
 
-        <string name="dialog_cancel">Cancel</string>
-
-        <string name="choose_menu_2">Share</string>
-        <string name="choose_menu_3">Rename</string>
-        <string name="choose_menu_4">Delete</string>
-
-        <string name="choose_hint">New Report name</string>
-
-        <string name="action_sort">Sort entries</string>
-        <string name="action_sort_title">Sort by title</string>
-        <string name="action_sort_create">Sort by date</string>
-        <string name="action_sort_ext">Sort by extension</string>
-
-        <string name="action_filter">Search in entries</string>
-        <string name="action_filter_title">Search in titles</string>
-        <string name="action_filter_create">Search in creation dates</string>
-
-        <string name="filter_today">Today</string>
-        <string name="filter_yesterday">Yesterday</string>
-        <string name="filter_before">Day before yesterday</string>
-        <string name="filter_month">This month</string>
-        <string name="filter_own">Own search</string>
-        <string name="filter_clear">Cancel search</string>
-
-        <string name="sort_title">title</string>
-        <string name="sort_date">date</string>
-        <string name="sort_extension">extension</string>
-
-        <string name="choose_titleMain">Health Records</string>
-        <string name="title_hint">Title</string>
+    <string name="app_title_2">Saving picture …</string>
+    <string name="crop_image_menu_rotate_left">Rotate left</string>
+    <string name="crop_image_menu_rotate_right">Rotate right</string>
 
 
-        // About
+    //File chooser
 
-        <string name="about_settings">… and other things</string>
-        <string name="about_settings_text">Changelog, help,used libraries and more.</string>
+    <string name="dialog_cancel">Cancel</string>
 
-        <string name="about_title_main">About CareConnect </string>
-        <string name="about_title_dev">Developer</string>
-        <string name="about_title_libs">Used open source libraries</string>
-        <string name="about_title_ext">Extension</string>
+    <string name="choose_menu_2">Share</string>
+    <string name="choose_menu_3">Rename</string>
+    <string name="choose_menu_4">Delete</string>
+
+    <string name="choose_hint">New Report name</string>
+
+    <string name="action_sort">Sort entries</string>
+    <string name="action_sort_title">Sort by title</string>
+    <string name="action_sort_create">Sort by date</string>
+    <string name="action_sort_ext">Sort by extension</string>
+
+    <string name="action_filter">Search in entries</string>
+    <string name="action_filter_title">Search in titles</string>
+    <string name="action_filter_create">Search in creation dates</string>
+
+    <string name="filter_today">Today</string>
+    <string name="filter_yesterday">Yesterday</string>
+    <string name="filter_before">Day before yesterday</string>
+    <string name="filter_month">This month</string>
+    <string name="filter_own">Own search</string>
+    <string name="filter_clear">Cancel search</string>
+
+    <string name="sort_title">title</string>
+    <string name="sort_date">date</string>
+    <string name="sort_extension">extension</string>
+
+    <string name="choose_titleMain">Health Records</string>
+    <string name="title_hint">Title</string>
 
 
+    <string name="about_ext">Report Viewer</string>
 
-        <string name="about_ext">Report Viewer</string>
-
-        <string name="about_intro">Intro</string>
-        <string name="about_intro_summary">Show the intro screen one more time.</string>
-
-
-        <string name="about_license_2">Used to crop and rotate images.</string>
-        <string name="about_license_3">Used to build the intro screen.</string>
-        <string name="about_license_4">Used to enhance and manipulate pictures.</string>
-        <string name="about_license_5">Used to create and manipulate PDF files.</string>
-        <string name="about_license_6">Used to convert PDF files to images.</string>
-        <string name="about_license_7">Used to create the \"About screen\".</string>
-        <string name="about_license_8">The source of nearly all icons.</string>
-        <string name="about_license_9">A powerful image downloading and caching library for Android.</string>
-        <string name="about_license_1">Android library to easily pick an image from gallery or camera app.</string>
+    <string name="about_intro">Intro</string>
+    <string name="about_intro_summary">Show the intro screen one more time.</string>
 
 
-        // Intro
+    // Intro
 
-        <string name="intro_skip">Skip</string>
-        <string name="intro_finish">Let\'s start.</string>
+    <string name="intro_skip">Skip</string>
+    <string name="intro_finish">Let\'s start.</string>
 
-        <string name="intro1_title">Track Health Record </string>
-        <string name="intro1_text">Thank you for choosing \"CareConnect\". It\'s fully open free and still in development.
+    <string name="intro1_title">Track Health Record </string>
+    <string name="intro1_text">Thank you for choosing \"CareConnect\". It\'s fully open free and still in development.
         You can reach a short help dialog on every tab by pressing \"menu -> help\" …</string>
 
-        <string name="intro2_title">The tabs</string>
-        <string name="intro2_text">You have a build in file explorer. You can either create new Health Record files from an image or from text or
+    <string name="intro2_title">The tabs</string>
+    <string name="intro2_text">You have a build in file explorer. You can either create new Health Record files from an image or from text or
         manipulate existing PDFs.</string>
 
-        <string name="intro3_title">Nice to know:</string>
-        <string name="intro3_text">At the bottom you can see the name of the actual Report and the format. By pressing this area
+    <string name="intro3_title">Nice to know:</string>
+    <string name="intro3_text">At the bottom you can see the name of the actual Report and the format. By pressing this area
         you can switch between portrait and landscape format for your PDF page.</string>
 
-    </resources>
+
+    <string name="true_button">সত্য</string>
+    <string name="false_button">মিথ্যা</string>
+    <string name="initial_score">ফলাফল 0/40</string>
+
+
+    <string name="incorrect_toast">Next!</string>
+    <string name="correct_toast">Next!</string>
+
+    <string name="question_1">আমি আশা এবং উৎসাহ নিয়ে অপেক্ষায় আছি।.</string>
+    <string name="question_2">আমি সব আশা ছেড়ে দিয়েছি কারন নিজের ভাল কোন কিছু করার জন্য আমার আর কিছুই করার নেই।</string>
+    <string name="question_3">যখন খারাপ সময়ের ভিতর দিয়ে যাই, তখন আমি বুঝতে পারি যে সময় সবসময় খারাপ যাবে না।</string>
+    <string name="question_4">দশ বছর পর আমার জীবন কেমন হবে তা আমি কল্পনা ও করতে পারি না।</string>
+    <string name="question_5">আমি যেসব কাজ খুব বেশী করতে চাই, তা শেষ করার মত যথেষ্ট সময় আমার আছে ।</string>
+    <string name="question_6">যেসব বিষয়/কাজ নিয়ে আমি উদ্বিগ্ন থাকি আমি আশা করি যে ভবিষ্যতে আমি সেসব বিষয়ে সফল হব।</string>
+    <string name="question_7">আমার মনে হয় আমার ভবিষ্যত অন্ধকারাচ্ছন্ন</string>
+    <string name="question_8">আমি সাধারণভাবে একজন ভাগ্যবান এবং জীবনের ভাল জিনিসগুলোর অধিকাংশই একজন সাধারণ মানুষ থেকে বেশী পাওয়ার আশা করি।</string>
+    <string name="question_9">আমি বিশ্রাম নেয়ার কোন সুযোগ-ই পাই না আর ভবিষ্যতে যে পাব তা বিশ্বাস করার মত কোন কারণও নেই।".</string>
+    <string name="question_10">অতীত অভিজ্ঞতা গুলো আমাকে ভবিষ্যতের জন্য সুন্দরভাবে তৈরী করে দিয়েছে।".</string>
+    <string name="question_11">আমি আমার সামনে আনন্দের পরিবর্তে শুধু নিরানন্দই দেখি।</string>
+    <string name="question_12">যা আমি পেতে চাই তা পাওয়ার কোন আশা আমার নাই।</string>
+    <string name="question_13">আমি আশা করি ভবিষ্যতে আমি বর্তমান অবস্থার চেয়ে বেশী সুখে থাকবো।</string>
+    <string name="question_14">আমি যে ভাবে চাই, কোন কিছুই সেভাবে হয় না।</string>
+    <string name="question_15">ভবিষ্যত সম্পর্কে আমি বেশ আস্থাশীল।</string>
+    <string name="question_16">যা আমি চাই তা কখনোই পাই না, তাই নিজের জন্য চাওয়াটা বোকামী।</string>
+    <string name="question_17">ভবিষ্যতে আমার প্রকৃতই সুখি/ তৃপ্ত হবার সম্ভাবনা খুবই কম।</string>
+    <string name="question_18">ভবিষ্যত আমার কাছে অস্পষ্ট ও অনিশ্চিত ।</string>
+    <string name="question_19">আমি খারাপ সময়ের চাইতে ভাল সময়ের জন্য বেশী অপেক্ষা করবো।</string>
+    <string name="question_20">কোন কিছু পাওয়ার জন্য চেষ্টা করার কোন মানে হয় না, কারন সম্ভবত: সেটা পাওয়া যাবে না।</string>
+    <string name="question_21">আমার ঘন ঘন শ্বাস পড়ে</string>
+    <string name="question_22">আমার দমবন্ধ বোধ হয়</string>
+    <string name="question_23">আমার বুক ভার ভার লাগে</string>
+    <string name="question_24">আমার বুক ধড়ফড় করে</string>
+    <string name="question_25">আমার বুকে ব্যথা অনুভব করি</string>
+    <string name="question_26">আমার গা/ হাত-পা শির শির করে</string>
+    <string name="question_27">আমার হাত/ পা কাঁপে</string>
+    <string name="question_28">আমার হাত/ পা অবশ লাগে</string>
+    <string name="question_29">আমার হাত/ পা জ্বালা পোড়া করে</string>
+    <string name="question_30">আমার মাথা ঝিম ঝিম করে</string>
+    <string name="question_31">আমার মাথা ঘোরে</string>
+    <string name="question_32">আমার মাথা ব্যথা করে</string>
+    <string name="question_33">আমার মাথা থেকে গরম তাপ উঠে</string>
+    <string name="question_34">আমার গলা শুকিয়ে যায় ও পিপাসা লাগে</string>
+    <string name="question_35">আমি অসুস্থ হয়ে যাব এমন মনে হয়</string>
+    <string name="question_36">আমি আমার স্বাস্থ্য নিয়ে চিন্তিত থাকি</string>
+    <string name="question_37">আমি দুর্বল বোধ করি</string>
+    <string name="question_38">আমার হজমে অসুবিধা হয়</string>
+    <string name="question_39">আমার পেটে অস্বস্তি লাগে</string>
+    <string name="question_40">আমার বমি বমি লাগে</string>
+    <string name="question_41">আমার খুব ঘাম হয় ( গরমের জন্য নয়)</string>
+    <string name="question_42">আমি আরাম করতে পারি না</string>
+    <string name="question_43">আমার সামাজিক পরিবেশে কথা বলতে অসুবিধা হয়</string>
+    <string name="question_44">একই বিষয় নিয়ে আমার বার বার চিন্তা হয়</string>
+    <string name="question_45">আমার খুব খারাপ কিছু ঘটবে বলে আশঙ্কা হয়</string>
+    <string name="question_46">আমার প্রায়ই দুশ্চিন্তা হয়</string>
+    <string name="question_47">আমি প্রায়ই চমকে উঠি</string>
+    <string name="question_48">আমি বিচলিত বোধ করি</string>
+    <string name="question_49">আমার আত্ম-নিয়ন্ত্রন হারাবার ভয় হয়</string>
+    <string name="question_50">আমি এত নার্ভাস বা উত্তেজিত বোধ করি যে, মনে হয় আমার এলোমেলো হয়ে যাচ্ছে</string>
+    <string name="question_51">আমি ধৈর্য ধরতে পারি না</string>
+    <string name="question_52">আমি সিদ্ধান্তহীনতায় ভুগি</string>
+    <string name="question_53">আমার আত্ম- বিশ্বাসের অভাববোধ হয়</string>
+    <string name="question_54">একটা বিষয়ের প্রতি মনোযোগ দিয়ে রাখা আমার জন্য বেশ কষ্টকর</string>
+    <string name="question_55">আমার মনে হয় আমি এখনই মারা যাচ্ছি</string>
+    <string name="question_56">আমার মৃত্যু ভয় হয়</string>
+    <string name="question_57">আমার অশান্তি লাগে।</string>
+    <string name="question_58">ইদানিং আমি মনমরা থাকি।</string>
+    <string name="question_59">আমার ভবিষ্যত অন্ধকার।</string>
+    <string name="question_60">ভবিষ্যতে আমার অবস্থা দিন দিন আরো খারাপ হবে।</string>
+    <string name="question_61">আমার সব শেষ হয়ে গেছে।</string>
+    <string name="question_62">আমি মনে করি যে, জীবনটা বর্তমানে খুব বেশি কষ্টকর।</string>
+    <string name="question_63">বর্তমানে আমি অনুভব করি যে, মানুষ হিসেবে আমি সম্পূর্ণ ব্যর্থ।</string>
+    <string name="question_64">আমি কোথাও আনন্দ-ফুর্তি পাই না।</string>
+    <string name="question_65">নিজেকে খুব ছোট মনে হয়।</string>
+    <string name="question_66">সব কিছুতে আমার আত্ম-বিশ্বাস কমে গেছে।</string>
+    <string name="question_67">আমার মনে হয় মানুষ আমাকে করুনা করে।</string>
+    <string name="question_68">জীবনটা অর্থহীন।</string>
+    <string name="question_69">প্রায়ই আমার কান্না পায়।</string>
+    <string name="question_70">আমি প্রায়ই বিরক্ত বোধ করি।</string>
+    <string name="question_71">আমি কোন কিছুতেই আগ্রহ পাই না।</string>
+    <string name="question_72">আমি ইদানিং চিন্তা করতে ও সিদ্ধান্ত নিতে পারি না।</string>
+    <string name="question_73">আমি আজকাল অনেক কিছুতেই মনোযোগ দিতে পারি না।</string>
+    <string name="question_74">আমি আগের মত মনে রাখতে পারি না।</string>
+    <string name="question_75">আমি দুর্বল বোধ করি এবং অল্পতেই ক্লান্ত হয়ে পড়ি।</string>
+    <string name="question_76">আমি এখন কম ঘুমাই।</string>
+    <string name="question_77">আমি এখন বেশি ঘুমাই।</string>
+    <string name="question_78">আমার মেজাজ খিটখিটে হয়ে গেছে।</string>
+    <string name="question_79">আমার ক্ষুধা কমে গেছে।</string>
+    <string name="question_80">আমার ক্ষুধা বেড়ে গেছে।</string>
+    <string name="question_81">আমার ওজন কমে গেছে (ইচ্ছাকৃত ভাবে ওজন নিয়ন্ত্রণের চেষ্টা করার ফলে নয়)</string>
+    <string name="question_82">আমার মনে হয় যে আমার কাজ কর্মের গতি কমে গেছে।</string>
+    <string name="question_83">হাসির কোন ঘটনা ঘটলেও আমি আর হাসতে পারি না।</string>
+    <string name="question_84">যৌন বিষয়ে আমার আগ্রহ কমে গেছে।</string>
+    <string name="question_85">সামাজিক কাজকর্মে আগের মতো অংশগ্রহন করতে পারি না।</string>
+    <string name="question_86">শিক্ষা ও পেশাগত কাজকর্ম আগের মতো করতে পারি না।</string>
+
+
+    <string name="adv_title">----পরামর্শ----</string>
+    <string name="adv_01">১. কাছের বিশ্বস্ত কারো সাথে আপনার কথা গুলো শেয়ার করতে পারেন, এতে আপনি হালকা অনুভব করবেন।</string>
+    <string name="adv_02">২. আপনার অনুভূতি গুলো ডাইরিতে লিখে রাখতে পারেন। এতেও আপনার কষ্টের অনুভুতিটা কমবে। তবে অবশ্যই পেজ গুলো ছিড়ে ফেলবেন।</string>
+    <string name="adv_03">৩. ব্যায়াম করা: ব্যায়াম করলে এন্ডোরফিন নামক হরমোন নিঃসৃত হয়, যা শরীরে এনার্জি বাড়ায় এবং ইতিবাচক অনুভূতি বাড়িয়ে তুলে। তাই আপনি পছন্দমত ব্যায়াম করতে পারেন, যেমন- হাঁটা, সাইকেল চালানো, টেনিস খেলা, সাঁতার কাটা ইত্যাদি। নিয়মিত ব্যায়াম করলে আপনি যে উপকারিতা পাবেন তা হলো-\n\n
+    ** মানসিক চাপ কমে আসবে \n
+    ** উদ্বেগ এবং হতাশার অনুভূতি কমবে\n
+    ** আত্মমর্যাদাবোধ বাড়বে\n
+    ** ঘুমের উন্নতি হবে</string>
+    <string name="adv_04">৪. মৃদু সুরের গান শুনতে পারেন। গান শুনলে সেরোটোনিন নামক হরমোন নিঃসৃত হয় যা বিষন্নতা বা মন খারাপের অনুভূতি কমাতে সাহায্য করে। \n\n</string>
+
+
+</resources>
 
 

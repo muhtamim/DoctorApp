@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Advise">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/depresion"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/line"
+        android:layout_height="100dp"
+        android:layout_below="@id/image"
+        android:src="@drawable/line"/>
+
+    <TextView
+        android:id="@+id/advise_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adv_title"
+        android:layout_below="@id/line"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/advise_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/adv_01"
+        android:layout_below="@id/advise_title"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/advise_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/adv_02"
+        android:layout_below="@id/advise_01"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/advise_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/adv_03"
+        android:layout_below="@id/advise_02"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/advise_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/adv_04"
+        android:layout_below="@id/advise_03"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
+</ScrollView>

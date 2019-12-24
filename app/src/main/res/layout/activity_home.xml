@@ -37,7 +37,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/m_reminder" />
+                    android:background="@drawable/drug_icon" />
             </LinearLayout>
 
             <LinearLayout
@@ -79,10 +79,14 @@
             android:background="@drawable/ic_chart" />
 
         <Button
+            android:id="@+id/selftest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Self Test"
+            android:textAllCaps="false"
             android:layout_alignParentBottom="true"
             android:background="@color/about_facebook_color"
             android:textColor="#fff" />
+
     </RelativeLayout>
 </ScrollView>
