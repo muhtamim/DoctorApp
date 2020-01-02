@@ -351,6 +351,23 @@
     ** ঘুমের উন্নতি হবে</string>
     <string name="adv_04">৪. মৃদু সুরের গান শুনতে পারেন। গান শুনলে সেরোটোনিন নামক হরমোন নিঃসৃত হয় যা বিষন্নতা বা মন খারাপের অনুভূতি কমাতে সাহায্য করে। \n\n</string>
 
+
+
+    <!-- OnBoard Screen. -->
+
+    <string name="ob_header1">Doctor Appointments</string>
+    <string name="ob_header2">Articles</string>
+    <string name="ob_header3">Drug Directory</string>
+    <string name="ob_header4">Track Health Records</string>
+    <string name="ob_header5">Self Test</string>
+
+    <string name="ob_get_started">GET STARTED</string>
+
+    <string name="ob_desc1">Online platform for doctor appointments in Bangladesh</string>
+    <string name="ob_desc2">Medical News and articles you can trust from around the world. All content is written and reviewed by qualified health, medical and scientific experts.</string>
+    <string name="ob_desc3">Drug directory part of care Connect You can view different drugs along with details.You can search by generic names and trade names.You can calculate drugs dosage also.And lastly, this app has favourite options also to store your favourite drugs </string>
+    <string name="ob_desc4">Use this Application  to easily record your own medical records and your family personal health information for free.</string>
+    <string name="ob_desc5">When these moods persist, it may be that you are experiencing depression or anxiety – or both. These self tests ask some important questions that can help you take stock of where you are at so you can make a plan for feeling better sooner.</string>
 </resources>
 
 

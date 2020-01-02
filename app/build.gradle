@@ -73,6 +73,8 @@ dependencies {
     implementation 'com.github.Mariovc:ImagePicker:1.1.1'
     implementation 'com.android.support:support-v4:27.1.1'
 
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+
 }
 
 

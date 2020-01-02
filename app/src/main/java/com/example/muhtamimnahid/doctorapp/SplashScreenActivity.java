@@ -39,7 +39,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     i = i + 10;
 
                 }
-                startActivity(new Intent(getApplicationContext(), Home.class));
+                startActivity(new Intent(getApplicationContext(), OnBoardingActivity.class));
                 finish();
 
             }
