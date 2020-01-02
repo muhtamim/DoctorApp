@@ -56,7 +56,7 @@ public class Home extends AppCompatActivity {
                 myAlertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface arg0, int arg1) {
                         Intent intent = new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://drive.google.com/open?id=1cD7s9IVeMiMB9ZViEw0TusXxvnY-4MAQ"));
+                                Uri.parse("https://drive.google.com/file/d/1sVcFaVJAwdUQnRL4Ya4ZxMsrquD7xEhG/view?usp=sharing"));
                         startActivity(intent);
                     }
                 });
