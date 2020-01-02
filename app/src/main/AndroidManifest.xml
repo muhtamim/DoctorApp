@@ -159,6 +159,8 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
         <activity android:name=".bisonnotaMainActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
+        <activity android:name=".Calculators"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
 
     </application>
 

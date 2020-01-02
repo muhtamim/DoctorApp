@@ -47,7 +47,13 @@ public class SelfTest extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        bmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelfTest.this,Calculators.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

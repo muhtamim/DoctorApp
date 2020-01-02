@@ -63,4 +63,9 @@
     <color name="colorDivider">#B6B6B6</color>
 
     <color name="most_button_Used">#0F7DC2</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
 </resources>

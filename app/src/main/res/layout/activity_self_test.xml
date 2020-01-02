@@ -189,13 +189,13 @@
                         android:layout_height="64dp"
                         android:background="@drawable/cerclebackgroundyello"
                         android:padding="10dp"
-                        android:src="@drawable/bmi" />
+                        android:src="@drawable/nuration" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="বি.এম.আই ক্যালকুলেটর"
+                        android:text="পুষ্টি ক্যালকুলেটর"
                         android:textStyle="bold" />
 
                     <View
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="আপনার উচ্চতার সাথে ওজনের সম্পর্ক"
+                        android:text="প্রতিদিনের পুষ্টির হিসাব"
                         android:textColor="@android:color/darker_gray" />
 
                 </LinearLayout>

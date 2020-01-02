@@ -29,27 +29,27 @@ public class hopelessMainActivity extends AppCompatActivity {
     int mQuestion;
 
     // Array to store Questions and Answers and retrieve from TrueFalse Model
-    private TrueFalse[] mQuestionBank = new TrueFalse [] {
-            new TrueFalse(R.string.question_1,true),
-            new TrueFalse(R.string.question_2,false),
-            new TrueFalse(R.string.question_3,true),
-            new TrueFalse(R.string.question_4,false),
-            new TrueFalse(R.string.question_5,true),
-            new TrueFalse(R.string.question_6,true),
-            new TrueFalse(R.string.question_7,false),
-            new TrueFalse(R.string.question_8,true),
-            new TrueFalse(R.string.question_9,false),
-            new TrueFalse(R.string.question_10,true),
-            new TrueFalse(R.string.question_11,false),
-            new TrueFalse(R.string.question_12,false),
-            new TrueFalse(R.string.question_13,true),
-            new TrueFalse(R.string.question_14,false),
-            new TrueFalse(R.string.question_15,true),
-            new TrueFalse(R.string.question_16,false),
-            new TrueFalse(R.string.question_17,false),
-            new TrueFalse(R.string.question_18,false),
-            new TrueFalse(R.string.question_19,true),
-            new TrueFalse(R.string.question_20,false)
+    private TrueFalse[] mQuestionBank = new TrueFalse[]{
+            new TrueFalse(R.string.question_1, true),
+            new TrueFalse(R.string.question_2, false),
+            new TrueFalse(R.string.question_3, true),
+            new TrueFalse(R.string.question_4, false),
+            new TrueFalse(R.string.question_5, true),
+            new TrueFalse(R.string.question_6, true),
+            new TrueFalse(R.string.question_7, false),
+            new TrueFalse(R.string.question_8, true),
+            new TrueFalse(R.string.question_9, false),
+            new TrueFalse(R.string.question_10, true),
+            new TrueFalse(R.string.question_11, false),
+            new TrueFalse(R.string.question_12, false),
+            new TrueFalse(R.string.question_13, true),
+            new TrueFalse(R.string.question_14, false),
+            new TrueFalse(R.string.question_15, true),
+            new TrueFalse(R.string.question_16, false),
+            new TrueFalse(R.string.question_17, false),
+            new TrueFalse(R.string.question_18, false),
+            new TrueFalse(R.string.question_19, true),
+            new TrueFalse(R.string.question_20, false)
 
 
     };
@@ -78,7 +78,7 @@ public class hopelessMainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             mScore = savedInstanceState.getInt("ScoreKey");
             mIndex = savedInstanceState.getInt("IndexKey");
-            mScoreTextView.setText("Score "+ mScore + "/" + 40);
+            mScoreTextView.setText("Score " + mScore + "/" + 40);
 
         } else {
             mScore = 0;
@@ -112,13 +112,11 @@ public class hopelessMainActivity extends AppCompatActivity {
         String message;
         if (Score == 40) {
             message = "আর দেরি না করে এখনই একজন স্পেশালিস্ট এর কাছে যেতে হবে। যার কাছে কাউন্সেলিং এর মাধ্যমে আপনার আশাহীনতায় কাটিয়ে উঠতে পারবেন।";
-        } else if (Score > 35 ) {
+        } else if (Score > 35) {
             message = "আপনি আশাহীনতায় ভুগছেন";
-        }
-        else if (Score > 30 ) {
+        } else if (Score > 25) {
             message = "আপনি হালকা বিষন্নতা ভুগছেন";
-        }
-        else if (Score > 8 ) {
+        } else if (Score > 8) {
             message = "আপনি স্বাভাবিক আছেন";
         } else {
             message = "আপনার কোন আশাহীনতায় হওয়ার সম্ভাবনা নেই";
@@ -140,7 +138,7 @@ public class hopelessMainActivity extends AppCompatActivity {
             alert.setPositiveButton("আবার টেস্ট করুন", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    makeText(getApplicationContext(),"আবার টেস্ট দিন", Toast.LENGTH_SHORT).show();
+                    makeText(getApplicationContext(), "আবার টেস্ট দিন", Toast.LENGTH_SHORT).show();
                     recreate();
                     mProgressBar.setProgress(0);
                     mScore = 0;
@@ -149,9 +147,10 @@ public class hopelessMainActivity extends AppCompatActivity {
             alert.setNegativeButton("আপনার জন্য পরামর্শ", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Intent intent = new Intent(hopelessMainActivity.this,Advise.class);
+                    Intent intent = new Intent(hopelessMainActivity.this, Advise.class);
                     startActivity(intent);
-                }});
+                }
+            });
 
             alert.show();
         }
@@ -159,7 +158,7 @@ public class hopelessMainActivity extends AppCompatActivity {
         mQuestion = mQuestionBank[mIndex].getQuestionID();
         mQuestionTextView.setText(mQuestion);
         mProgressBar.incrementProgressBy(PROGRESS_BAR_INCREMENT);
-        mScoreTextView.setText("ফলাফল"+ mScore + "/" + 40);
+        mScoreTextView.setText("ফলাফল" + mScore + "/" + 40);
     }
 
     private void checkAnswer(boolean userSelection) {
