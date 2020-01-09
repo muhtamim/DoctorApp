@@ -5,13 +5,15 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Calculators extends Activity {
+public class Calculators extends AppCompatActivity {
 
     Button bt;
     EditText edt, edt2, edt3;
@@ -21,6 +23,9 @@ public class Calculators extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmicalculators);
+
+        getSupportActionBar().setTitle("পুষ্টি ক্যালকুলেটর");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         bt = (Button) findViewById(R.id.btn);
         check = (CheckBox) findViewById(R.id.checkBox);
@@ -101,4 +106,15 @@ public class Calculators extends Activity {
             }
         });
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                overridePendingTransition(R.anim.enter_from_right, R.anim.exit_out_right);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
+
+
