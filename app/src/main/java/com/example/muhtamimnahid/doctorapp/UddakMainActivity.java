@@ -131,10 +131,10 @@ public class UddakMainActivity extends AppCompatActivity {
         } else if (Score > 60) {
             message = "আর দেরি না করে এখনই একজন স্পেশালিস্ট এর কাছে যেতে হবে। যার কাছে কাউন্সেলিং এর মাধ্যমে আপনার উদ্বিগ্নতা কাটিয়ে উঠতে পারবেন।";
         } else if (Score > 50) {
-            message = "আপনি উদ্বিগ্নতাায় ভুগছেন";
+            message = "আপনি উদ্বিগ্নতায় ভুগছেন";
 
         } else if (Score > 40) {
-            message = "আপনি হালকা বিষন্নতা ভুগছেন";
+            message = "আপনি হালকা উদ্বিগ্নতায় ভুগছেন";
         } else if (Score > 10) {
             message = "আপনি স্বাভাবিক আছেন";
         } else {

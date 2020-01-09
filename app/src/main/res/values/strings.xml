@@ -48,8 +48,8 @@
 
     // App titles
 
-    <string name="create_image">Image to Health Records</string>
-    <string name="create_text">Text to Health Records</string>
+    <string name="create_image">Image to HR</string>
+    <string name="create_text">Text to HR</string>
     <string name="add_image">+ image</string>
     <string name="add_text">+ text | …</string>
     <string name="app_title_edit">Edit image</string>
@@ -350,7 +350,6 @@
     ** আত্মমর্যাদাবোধ বাড়বে\n
     ** ঘুমের উন্নতি হবে</string>
     <string name="adv_04">৪. মৃদু সুরের গান শুনতে পারেন। গান শুনলে সেরোটোনিন নামক হরমোন নিঃসৃত হয় যা বিষন্নতা বা মন খারাপের অনুভূতি কমাতে সাহায্য করে। \n\n</string>
-
 
 
     <!-- OnBoard Screen. -->

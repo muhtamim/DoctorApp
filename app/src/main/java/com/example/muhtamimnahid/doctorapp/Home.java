@@ -18,6 +18,7 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().setTitle("CareConnect || Dashboard");
         doctor_app = (Button) findViewById(R.id.doctor_appointment);
         drug_directory = (Button) findViewById(R.id.drugdirectory);
         Artical = (Button) findViewById(R.id.articles);
