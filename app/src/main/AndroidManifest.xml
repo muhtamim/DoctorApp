@@ -8,6 +8,11 @@
     <uses-permission
         android:name="android.permission.INTERNET"
         tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -143,6 +148,23 @@
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".SelfTest"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".UddakMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".bisonnotaMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".Calculators"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+
+        <activity
+            android:name=".OnBoardingActivity"
+            android:screenOrientation="portrait" />
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.muhtamimnahid.doctorapp.provider"
@@ -153,16 +175,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".SelfTest"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
-        <activity android:name=".UddakMainActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
-        <activity android:name=".bisonnotaMainActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
-        <activity android:name=".Calculators"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" ></activity>
-        <activity android:name=".OnBoardingActivity"
-            android:screenOrientation="portrait"/>
+
 
     </application>
 

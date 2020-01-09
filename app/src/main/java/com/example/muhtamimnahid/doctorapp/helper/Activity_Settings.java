@@ -65,20 +65,6 @@ public class Activity_Settings extends AppCompatActivity {
             });
         }
 
-//        private void addLicenseListener() {
-//            Preference reset = findPreference("license");
-//
-//            reset.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-//                public boolean onPreferenceClick(Preference pref) {
-//
-//                    Intent intent = new Intent(getActivity(), About_activity.class);
-//                    startActivity(intent);
-//                    getActivity().overridePendingTransition(0, 0);
-//
-//                    return true;
-//                }
-//            });
-//        }
 
         private void addPathListener() {
             Preference reset = findPreference("folder");
