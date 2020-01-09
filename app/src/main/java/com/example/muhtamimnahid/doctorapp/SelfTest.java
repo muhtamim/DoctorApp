@@ -10,7 +10,7 @@ import android.view.View;
 
 public class SelfTest extends AppCompatActivity {
 
-    CardView asahahin,uddag,bisonnota,bmi;
+    public CardView asahahin,uddag,bisonnota,bmi,bmical,water;
     private Toolbar mToolbar;
 
     @Override
@@ -23,6 +23,8 @@ public class SelfTest extends AppCompatActivity {
         uddag = (CardView) findViewById(R.id.uddagid);
         bisonnota=(CardView)findViewById(R.id.bisonnotaid);
         bmi = (CardView) findViewById(R.id.bmiid);
+        bmical = (CardView) findViewById(R.id.bmical);
+        water = (CardView) findViewById(R.id.waterid);
 
        asahahin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +53,20 @@ public class SelfTest extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SelfTest.this,Calculators.class);
+                startActivity(intent);
+            }
+        });
+        bmical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelfTest.this,Calculate_BMI.class);
+                startActivity(intent);
+            }
+        });
+        water.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SelfTest.this,Water_Intake.class);
                 startActivity(intent);
             }
         });

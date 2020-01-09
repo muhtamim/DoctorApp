@@ -90,8 +90,7 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".ArticalHealth"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity android:name=".ArticalFood"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".ArticalFood" />
         <activity
             android:name=".Advise"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
@@ -165,6 +164,11 @@
         <activity
             android:name=".Calculators"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+
+        <activity android:name=".Water_Intake"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".Calculate_BMI"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
         <activity
             android:name=".OnBoardingActivity"
